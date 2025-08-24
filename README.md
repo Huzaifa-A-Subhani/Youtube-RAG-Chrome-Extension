@@ -41,7 +41,7 @@ uvicorn rag_backend:app --reload
 
 1. Open Chrome and go to: `chrome://extensions/`  
 2. Enable Developer Mode (top right)  
-3. Click **Load unpacked** and select the project folder (`10.CHROME_EXTENSION_PROJECT/`)  
+3. Click **Load unpacked** and select the project folder (all files except rag_backend.py)
 4. The extension will now appear in your extensions list 🚀  
 
 ---
