@@ -1,0 +1,98 @@
+
+/* styles.css for YouTube RAG Assistant */
+#yt-rag-toggle {
+  position: fixed;
+  right: 12px;
+  bottom: 16px;
+  z-index: 10000;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: #0f63ff;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(0,0,0,.20);
+  cursor: pointer;
+}
+#yt-rag-toggle.active { background: #0a46b7; }
+
+#yt-rag-sidebar {
+  position: fixed;
+  top: 56px;
+  right: 0;
+  height: calc(100% - 56px);
+  width: 360px;
+  max-width: 60vw;
+  background: #ffffff;
+  border-left: 1px solid #e5e5e5;
+  box-shadow: -8px 0 24px rgba(0,0,0,.06);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+.yt-rag-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+}
+.yt-rag-title { font-weight: 700; }
+#yt-rag-close {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.yt-rag-body {
+  padding: 12px;
+  overflow: auto;
+  flex: 1;
+}
+
+.yt-rag-row { margin-bottom: 10px; }
+.yt-rag-label { display: block; margin-bottom: 4px; font-size: 12px; color: #666; }
+#yt-rag-input {
+  width: 100%;
+  min-height: 80px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  resize: vertical;
+}
+
+#yt-rag-ask, #yt-rag-summarize {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+  background: #0f63ff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.yt-rag-status { font-size: 12px; color: #666; margin-top: 6px; }
+.yt-rag-response {
+  white-space: pre-wrap;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: #fcfcfc;
+  margin-top: 8px;
+}
+
+#yt-rag-drag {
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 6px;
+  height: 100%;
+  cursor: col-resize;
+  background: transparent;
+}
+body.yt-rag-dragging { cursor: col-resize !important; }
